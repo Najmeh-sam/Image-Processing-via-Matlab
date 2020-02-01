@@ -1,10 +1,6 @@
 % clear all;
 % clc;
 function grayMain(inImg)
-%inImg = imread('D:\Najmeh\Courses\HistogeramSpecialization\05.jpg');
-%inImg = imread('D:\Najmeh\Courses\ImagePro\home2\t2.bmp');
-%inImg=rgb2gray(inImg);
-%inhistR=imhist(inImg(:,:,1));
 inhistR=imhist(inImg);
 figure, imshow(inImg);
 figure, imhist(inImg);
@@ -15,7 +11,7 @@ figure, imhist(inImg);
 inhistR=inhistR./(m*n);
 
 for i=1:83
-    img2 = imread(['natures\',int2str(i),'.jpg']);
+    img2 = imread(['database\',int2str(i),'.jpg']);
     img2=rgb2gray(img2);
     [a b c]=size(inImg);
     %x=imhist(img2(:,:,1))';
