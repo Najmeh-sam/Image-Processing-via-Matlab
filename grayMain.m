@@ -22,7 +22,7 @@ for i=1:83
 end
 
 [minim,index1]=min(minimum);
-img2 = imread(['natures\',int2str(index1),'.jpg']);
+img2 = imread(['database\',int2str(index1),'.jpg']);
 [a b c]=size(img2);
 p(index1)=p(index1)*(a*b);
 inImg=histeq(inImg, p(index1,:));  
